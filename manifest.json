@@ -1,17 +1,18 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-29T00:00:00Z",
+  "feed_version": "1.0.0",
+  "generated_at": "2026-06-29T19:45:00Z",
+  "loader": {
+    "latest_version": "1.0.0",
+    "minimum_supported_version": "1.0.0",
+    "download_url": "https://github.com/im1gu1/IMod-Releases/releases/latest/download/IMod.exe",
+    "changelog_url": "https://im1gu1.github.io/imod-feed/updates/loader.json"
+  },
   "games": [
     {
       "id": "farcry4",
       "name": "Far Cry 4",
-      "process_name": "FarCry4.exe",
-      "version": "1.0.0",
-      "loader": {
-        "type": "external",
-        "url": "trainers/farcry4/loader.json",
-        "sha256": null
-      }
+      "manifest_url": "https://im1gu1.github.io/imod-feed/games/farcry4.json"
     }
   ]
 }
