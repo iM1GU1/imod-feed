@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-29T00:00:00Z",
+  "games": [
+    {
+      "id": "farcry4",
+      "name": "Far Cry 4",
+      "process_name": "FarCry4.exe",
+      "version": "1.0.0",
+      "loader": {
+        "type": "external",
+        "url": "trainers/farcry4/loader.json",
+        "sha256": null
+      }
+    }
+  ]
+}
