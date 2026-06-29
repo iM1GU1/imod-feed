@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "title": "IMod v1.0.0",
+  "date": "2026-06-29",
+  "changes": [
+    "Initial remote feed support",
+    "Far Cry 4 trainer catalog",
+    "Remote manifest loading",
+    "Local cache support"
+  ]
+}
