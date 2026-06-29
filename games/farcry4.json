@@ -1,0 +1,11 @@
+{
+  "id": "farcry4",
+  "name": "Far Cry 4",
+  "process_name": "FarCry4.exe",
+  "latest_trainer_version": "1.0.0",
+  "minimum_loader_version": "1.0.0",
+  "package_url": "https://im1gu1.github.io/imod-feed/packages/farcry4/1.0.0/farcry4.imodpkg",
+  "sha256": "4964798ab4575222b541b31be1cbbed930b2979136949466e5877c6c507d3cdb",
+  "status": "active",
+  "notes": "Single-player/offline trainer package."
+}
