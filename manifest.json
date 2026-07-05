@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "feed_version": "1.0.0",
-  "generated_at": "2026-06-29T19:45:00Z",
+  "generated_at": "2026-07-05T14:11:15Z",
   "loader": {
     "latest_version": "1.0.0",
     "minimum_supported_version": "1.0.0",
@@ -13,6 +13,11 @@
       "id": "farcry4",
       "name": "Far Cry 4",
       "manifest_url": "https://im1gu1.github.io/imod-feed/games/farcry4.json"
+    },
+    {
+      "id": "liesofp",
+      "name": "Lies of P",
+      "manifest_url": "https://im1gu1.github.io/imod-feed/games/liesofp.json"
     }
   ]
 }

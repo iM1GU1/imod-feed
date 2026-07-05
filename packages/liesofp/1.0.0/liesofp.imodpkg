@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "game": {
+    "id": "liesofp",
+    "name": "Lies of P",
+    "process_name": "LOP-Win64-Shipping.exe",
+    "module_name": "LOP-Win64-Shipping.exe"
+  },
+  "trainer": {
+    "version": "1.0.0",
+    "minimum_loader_version": "1.0.0",
+    "format": "declarative",
+    "notes": "Single-player/offline declarative catalog converted from Cheat Engine table. No remote code is executed.",
+    "source_table": "LOP-Win64-Shipping.CT",
+    "conversion_notes": [
+      "The source CT uses an Enable Auto Assembler script with aobscanmodule, allocations, registered symbols and pointer-derived values.",
+      "This package intentionally does not include executable CT scripts or code caves.",
+      "Entries are listed as unsupported until a local loader implementation exists for each cheat id."
+    ]
+  },
+  "cheats": [
+    {
+      "id": "lop_health",
+      "name": "Health",
+      "description": "Player health value from the CT StatList pointer chain. Requires local pointer implementation.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: Player / Stat Component / StatData / StatList / Health. Depends on Enable script symbols."
+    },
+    {
+      "id": "lop_stamina",
+      "name": "Stamina",
+      "description": "Player stamina value from the CT StatList pointer chain. Requires local pointer implementation.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: Player / Stat Component / StatData / StatList / Stamina. Depends on Enable script symbols."
+    },
+    {
+      "id": "lop_fable",
+      "name": "Fable",
+      "description": "Fable meter value from the CT StatList pointer chain. Requires local pointer implementation.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: Player / Stat Component / StatData / StatList / Fable."
+    },
+    {
+      "id": "lop_legion",
+      "name": "Legion",
+      "description": "Legion meter value from the CT StatList pointer chain. Requires local pointer implementation.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: Player / Stat Component / StatData / StatList / Legion."
+    },
+    {
+      "id": "lop_ergo",
+      "name": "Ergo amount",
+      "description": "Ergo amount entry exposed by the CT. Requires local pointer implementation.",
+      "category": "Economy",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT address expression: (Ergo). Depends on Enable script symbols."
+    },
+    {
+      "id": "lop_player_speed",
+      "name": "Player speed",
+      "description": "Player time dilation multiplier from the CT. Requires local pointer implementation.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT address expression: (pTimeDilationMulti)."
+    },
+    {
+      "id": "lop_max_weight",
+      "name": "Max weight",
+      "description": "Maximum carry weight value from the CT. Requires local pointer implementation.",
+      "category": "Inventory",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT address expression: (Max Carry Weight)."
+    },
+    {
+      "id": "lop_weapon_damage",
+      "name": "Equipped weapon damage",
+      "description": "Equipped weapon damage value from the CT. Requires local pointer implementation.",
+      "category": "Weapons",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT address expression: (1 Phys ATK Combined)."
+    },
+    {
+      "id": "lop_legion_arm_damage",
+      "name": "Legion arm damage",
+      "description": "Legion arm physical attack value from the CT. Requires local pointer implementation.",
+      "category": "Weapons",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT address expression: (Legion Phys ATK Combined)."
+    },
+    {
+      "id": "lop_vitality",
+      "name": "Vitality",
+      "description": "Default Vitality stat entry from the CT. Requires local pointer implementation.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: Default Abilities / Vitality."
+    },
+    {
+      "id": "lop_vigor",
+      "name": "Vigor",
+      "description": "Default Vigor stat entry from the CT. Requires local pointer implementation.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: Default Abilities / Vigor."
+    },
+    {
+      "id": "lop_capacity",
+      "name": "Capacity",
+      "description": "Default Capacity stat entry from the CT. Requires local pointer implementation.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: Default Abilities / Capacity."
+    },
+    {
+      "id": "lop_motivity",
+      "name": "Motivity",
+      "description": "Default Motivity stat entry from the CT. Requires local pointer implementation.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: Default Abilities / Motivity."
+    },
+    {
+      "id": "lop_technique",
+      "name": "Technique",
+      "description": "Default Technique stat entry from the CT. Requires local pointer implementation.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: Default Abilities / Technique."
+    },
+    {
+      "id": "lop_advance",
+      "name": "Advance",
+      "description": "Default Advance stat entry from the CT. Requires local pointer implementation.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: Default Abilities / Advance."
+    },
+    {
+      "id": "lop_humanity_level",
+      "name": "Humanity level",
+      "description": "Humanity level value from the CT. Requires local pointer implementation.",
+      "category": "Other",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT address expression: (Humanity Level)."
+    },
+    {
+      "id": "lop_sharpness",
+      "name": "Sharpness",
+      "description": "Weapon sharpness value from the CT equipment component. Requires local pointer implementation.",
+      "category": "Weapons",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: Equipment Component / Sharpness."
+    },
+    {
+      "id": "lop_gravity_scale",
+      "name": "Gravity scale",
+      "description": "Character movement gravity scale from the CT. Requires local pointer implementation.",
+      "category": "Other",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: CharacterMovement / GravityScale."
+    },
+    {
+      "id": "lop_jump_velocity",
+      "name": "Jump velocity",
+      "description": "Character movement jump velocity from the CT. Requires local pointer implementation.",
+      "category": "Other",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: CharacterMovement / JumpZVelocity."
+    },
+    {
+      "id": "lop_fly_mode",
+      "name": "Fly mode",
+      "description": "Movement mode byte exposed by the CT. Requires local pointer implementation and is not enabled remotely.",
+      "category": "Other",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: No Clip/Fly Mode / Fly Mode. Not converted to executable logic."
+    }
+  ]
+}
