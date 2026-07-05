@@ -1,0 +1,422 @@
+{
+  "schema_version": 1,
+  "game": {
+    "id": "liesofp",
+    "name": "Lies of P",
+    "process_name": "LOP-Win64-Shipping.exe",
+    "module_name": "LOP-Win64-Shipping.exe"
+  },
+  "trainer": {
+    "version": "1.0.2",
+    "minimum_loader_version": "1.0.0",
+    "format": "declarative",
+    "notes": "Single-player/offline declarative catalog converted from Cheat Engine table. No remote code is executed.",
+    "source_table": "LOP-Win64-Shipping.CT",
+    "changelog": [
+      "Converted direct local patches from LOP-Win64-Shipping.CT: Infinite bag items, weapon durability/sharpness and unlimited buff timer."
+    ],
+    "conversion_notes": [
+      "The source CT uses Auto Assembler scripts with aobscanmodule, allocations, registered symbols and pointer-derived values.",
+      "This package intentionally does not include executable CT scripts, code caves or dynamic code.",
+      "Entries are listed as unsupported until a local loader implementation exists for each cheat id."
+    ]
+  },
+  "cheats": [
+    {
+      "id": "lop_god_mode",
+      "name": "God mode",
+      "description": "Prevents most player damage according to the CT V6 script entry.",
+      "category": "Player",
+      "default_hotkey": "Numpad5",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= God mode #3C. Requires a local safe implementation; remote package does not execute the CT script."
+    },
+    {
+      "id": "lop_no_fall_damage",
+      "name": "No fall damage",
+      "description": "Prevents fall damage according to the CT V6 script entry.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= No Fall Damage. Requires a local safe implementation."
+    },
+    {
+      "id": "lop_infinite_fable_arts",
+      "name": "Infinite Fable arts",
+      "description": "Keeps Fable arts available according to the CT V6 script entry.",
+      "category": "Player",
+      "default_hotkey": "F10",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= Infinite Fable arts v9. Requires a local safe implementation."
+    },
+    {
+      "id": "lop_infinite_legion_arm",
+      "name": "Infinite Legion arm",
+      "description": "Keeps Legion arm resource available according to CT backup entries.",
+      "category": "Player",
+      "default_hotkey": "F9",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: backup scripts & aob's / <== Infinite Legion arm. Requires manual conversion."
+    },
+    {
+      "id": "lop_infinite_landmine",
+      "name": "Infinite landmine",
+      "description": "Keeps Deus Ex Machina landmines available according to the CT Legion Arm Pointer entry.",
+      "category": "Weapons",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= Legion Arm Pointer > / <= Infinite Landmine for Deus Ex Machina legion arm."
+    },
+    {
+      "id": "lop_freeze_weapon_durability",
+      "name": "Freeze weapon durability",
+      "description": "Stops weapon durability from decreasing according to the CT V6 script entry.",
+      "category": "Weapons",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "supported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= Freeze Weapons Durability. Requires a local safe implementation. Local IMod implementation available in loader build 1.0.0."
+    },
+    {
+      "id": "lop_damage_multiplier",
+      "name": "Damage multiplier",
+      "description": "Damage multiplier entry from the CT. Intended for offline testing only.",
+      "category": "Weapons",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= Damage Multiplier / <= Damage multiplier only. Requires local implementation and careful player/enemy separation."
+    },
+    {
+      "id": "lop_one_hit_kill",
+      "name": "One hit kill",
+      "description": "Enemy damage script entry from the CT. Offline only.",
+      "category": "Weapons",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= 1 HIT KILL for all enemies. Requires local implementation and validation that player damage is not affected."
+    },
+    {
+      "id": "lop_give_ergo_each_kill_multiplier",
+      "name": "Give Ergo each kill multiplier",
+      "description": "Ergo gain multiplier entry from the CT.",
+      "category": "Economy",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= Give Ergo each kill Multiplier. Requires local implementation."
+    },
+    {
+      "id": "lop_add_5000000_ergo",
+      "name": "Add 5,000,000 Ergo",
+      "description": "Adds Ergo when buying from merchants according to the CT README entry.",
+      "category": "Economy",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <== add 5,000,000 Ergo. Requires local implementation."
+    },
+    {
+      "id": "lop_infinite_gold_coins",
+      "name": "Infinite Gold Coins",
+      "description": "Keeps Gold Coins available when buying Cubes according to the CT.",
+      "category": "Economy",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= infinite Gold Coins works when buyin Cubes."
+    },
+    {
+      "id": "lop_infinite_equipment_items",
+      "name": "Infinite equipment items",
+      "description": "Equipment item multiplier entry from the CT V6 table.",
+      "category": "Inventory",
+      "default_hotkey": "F4",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= Infinite equipment items Multiplier."
+    },
+    {
+      "id": "lop_infinite_bag_items",
+      "name": "Infinite bag items",
+      "description": "Keeps bag items available according to the CT V6 script entry.",
+      "category": "Inventory",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "supported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= Infinite Bag Items. Local IMod implementation available in loader build 1.0.0."
+    },
+    {
+      "id": "lop_infinite_wishstone",
+      "name": "Infinite Cube Wishstone",
+      "description": "Keeps Cube Wishstones at 99 according to the CT V6 script entry.",
+      "category": "Inventory",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= infinite Cube's Wishstone #99."
+    },
+    {
+      "id": "lop_infinite_quartz",
+      "name": "Infinite Quartz",
+      "description": "Keeps Quartz available when using P-Organ according to CT backup entries.",
+      "category": "Inventory",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: broken / backup scripts & aob's / <= infinite Quartz."
+    },
+    {
+      "id": "lop_all_moonstones_upgrade",
+      "name": "All Moonstones +15 each upgrade",
+      "description": "Moonstone upgrade helper entry from CT backup scripts.",
+      "category": "Inventory",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: broken / backup scripts & aob's / <= ALL Moonstones increase +15 each 1 upgrade."
+    },
+    {
+      "id": "lop_speedhack_multiplier",
+      "name": "Speedhack multiplier",
+      "description": "Player speed multiplier entry from the CT V6 table.",
+      "category": "Other",
+      "default_hotkey": "F9",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= Speedhack Multiplier 2.0. Requires local implementation."
+    },
+    {
+      "id": "lop_slow_motion",
+      "name": "Slow motion",
+      "description": "Global slow motion multiplier entry from the CT.",
+      "category": "Other",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= Slow motion all characters multiplier."
+    },
+    {
+      "id": "lop_no_clip",
+      "name": "No-Clip",
+      "description": "No-clip movement entry from the CT V6 table.",
+      "category": "Other",
+      "default_hotkey": "Numpad3",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= No-Clip. Requires local implementation."
+    },
+    {
+      "id": "lop_fly_hack",
+      "name": "Fly hack / walk in air",
+      "description": "Fly/walk-in-air entry from the CT V6 table.",
+      "category": "Other",
+      "default_hotkey": "F5",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= Fly hack / walk in air. Requires local implementation."
+    },
+    {
+      "id": "lop_land_to_ground",
+      "name": "Land to ground",
+      "description": "Companion land-to-ground action from the CT fly hack group.",
+      "category": "Other",
+      "default_hotkey": "F6",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= Fly hack / walk in air / <= Land to ground."
+    },
+    {
+      "id": "lop_teleport_to_saved_location",
+      "name": "Teleport to saved location",
+      "description": "Teleport helper entry from the CT.",
+      "category": "Other",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <== Teleport to save location. Requires local coordinate implementation."
+    },
+    {
+      "id": "lop_character_movement_dexterity",
+      "name": "Character movement & Dexterity",
+      "description": "Character movement tuning entry from the CT.",
+      "category": "Other",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= Character movement & Dexterity."
+    },
+    {
+      "id": "lop_undetected_by_puppets",
+      "name": "Undetected by puppets",
+      "description": "Detection behavior entry from the CT.",
+      "category": "Other",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= Undetected by puppets. Requires local implementation and offline-only use."
+    },
+    {
+      "id": "lop_puppets_cannot_reach_you",
+      "name": "Puppets can't reach you",
+      "description": "Enemy behavior/range entry from the CT.",
+      "category": "Other",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= puppets can't reach you. Requires local implementation."
+    },
+    {
+      "id": "lop_show_weapons_hotel_krat",
+      "name": "Show weapons inside Hotel Krat",
+      "description": "Visibility/weapon display helper entry from the CT.",
+      "category": "Other",
+      "default_hotkey": "None",
+      "type": "aob_script_reference",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "CT path: <= Show weapons inside Hotel Krat."
+    },
+    {
+      "id": "lop_health",
+      "name": "Health",
+      "description": "Player health value from the CT pointer/value entries.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "Requires local pointer implementation. The remote package only describes the entry."
+    },
+    {
+      "id": "lop_stamina",
+      "name": "Stamina",
+      "description": "Player stamina value from the CT pointer/value entries.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "Requires local pointer implementation."
+    },
+    {
+      "id": "lop_fable",
+      "name": "Fable",
+      "description": "Fable meter value from the CT pointer/value entries.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "Requires local pointer implementation."
+    },
+    {
+      "id": "lop_legion",
+      "name": "Legion",
+      "description": "Legion meter value from the CT pointer/value entries.",
+      "category": "Player",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "Requires local pointer implementation."
+    },
+    {
+      "id": "lop_ergo",
+      "name": "Ergo amount",
+      "description": "Ergo amount entry exposed by the CT.",
+      "category": "Economy",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "Requires local pointer implementation."
+    },
+    {
+      "id": "lop_max_weight",
+      "name": "Max weight",
+      "description": "Maximum carry weight value from the CT.",
+      "category": "Inventory",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "Requires local pointer implementation."
+    },
+    {
+      "id": "lop_sharpness",
+      "name": "Sharpness",
+      "description": "Weapon sharpness value from the CT equipment component.",
+      "category": "Weapons",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "supported",
+      "enabled_by_default": false,
+      "notes": "Requires local pointer implementation. Local IMod implementation available in loader build 1.0.0."
+    },
+    {
+      "id": "lop_gravity_scale",
+      "name": "Gravity scale",
+      "description": "Character movement gravity scale from the CT.",
+      "category": "Other",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "Requires local pointer implementation."
+    },
+    {
+      "id": "lop_jump_velocity",
+      "name": "Jump velocity",
+      "description": "Character movement jump velocity from the CT.",
+      "category": "Other",
+      "default_hotkey": "None",
+      "type": "pointer_value",
+      "status": "unsupported",
+      "enabled_by_default": false,
+      "notes": "Requires local pointer implementation."
+    },
+    {
+      "id": "lop_unlimited_buff_timer",
+      "name": "Unlimited Buff Timer",
+      "description": "Prevents supported buff timers from decrementing.",
+      "category": "Player",
+      "default_hotkey": "F6",
+      "type": "aob_patch",
+      "status": "supported",
+      "enabled_by_default": false,
+      "notes": "Converted from CT path: Enable / Scripts / Unlimited Buff Timer. Local IMod implementation available."
+    }
+  ]
+}
