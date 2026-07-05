@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "game": {
+    "id": "liesofp",
+    "name": "Lies of P",
+    "process_name": "LOP-Win64-Shipping.exe",
+    "module_name": "LOP-Win64-Shipping.exe"
+  },
+  "trainer": {
+    "version": "1.0.8",
+    "minimum_loader_version": "1.0.0",
+    "format": "declarative",
+    "notes": "Single-player/offline package. Only God mode is exposed for this trainer build.",
+    "source_table": "LOP-Win64-Shipping.CT.6.CT",
+    "changelog": [
+      "Adjusted CT-style player hook for this build: uses current player context signature and stores RDI as local player.",
+      "God mode remains filtered by [player+848] stat component and health stat id 01."
+    ],
+    "conversion_notes": [
+      "Remote package remains declarative. God mode execution is implemented locally in IMod.exe.",
+      "No remote scripts, DLLs or Cheat Engine Auto Assembler code are executed."
+    ]
+  },
+  "cheats": [
+    {
+      "id": "lop_god_mode",
+      "name": "God mode",
+      "description": "Keeps only the local player health stat high using the current-build CT-style player filter.",
+      "category": "Player",
+      "default_hotkey": "F3",
+      "type": "local_code_cave_patch",
+      "status": "supported",
+      "enabled_by_default": false,
+      "notes": "Player hook updated for current build signature: 48 8B 07 45 32 E4 0F C6 F6 55. Health hook still filters [player+848] and stat id 01."
+    }
+  ]
+}
