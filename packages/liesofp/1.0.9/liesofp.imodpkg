@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "game": {
+    "id": "liesofp",
+    "name": "Lies of P",
+    "process_name": "LOP-Win64-Shipping.exe",
+    "module_name": "LOP-Win64-Shipping.exe"
+  },
+  "trainer": {
+    "version": "1.0.9",
+    "minimum_loader_version": "1.0.0",
+    "format": "declarative",
+    "notes": "Single-player/offline package. Only God mode is exposed for this trainer build.",
+    "source_table": "LOP-Win64-Shipping.CT.6.CT",
+    "changelog": [
+      "God mode now hooks the shared HP write directly and filters player by [rdi+0x12C] == 12.",
+      "Removed mandatory secondary health-stat/player-pointer hook dependency."
+    ],
+    "conversion_notes": [
+      "Remote package remains declarative. God mode execution is implemented locally in IMod.exe.",
+      "No remote scripts, DLLs or Cheat Engine Auto Assembler code are executed."
+    ]
+  },
+  "cheats": [
+    {
+      "id": "lop_god_mode",
+      "name": "God mode",
+      "description": "Keeps only the player HP at max using the shared HP write hook.",
+      "category": "Player",
+      "default_hotkey": "F3",
+      "type": "local_code_cave_patch",
+      "status": "supported",
+      "enabled_by_default": false,
+      "notes": "Uses aligned shared HP write signatures. If [rdi+0x12C] == 12, writes [rdi+0x3C] max HP into [rdi+0x0C]; otherwise preserves original write."
+    }
+  ]
+}
