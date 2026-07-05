@@ -2,10 +2,10 @@
   "id": "liesofp",
   "name": "Lies of P",
   "process_name": "LOP-Win64-Shipping.exe",
-  "latest_trainer_version": "1.0.2",
+  "latest_trainer_version": "1.0.3",
   "minimum_loader_version": "1.0.0",
-  "package_url": "https://im1gu1.github.io/imod-feed/packages/liesofp/1.0.2/liesofp.imodpkg",
-  "sha256": "eb3ae016d90de411bea09a1d566afee7a13835ce7e664db91fb6156660fb2191",
+  "package_url": "https://im1gu1.github.io/imod-feed/packages/liesofp/1.0.3/liesofp.imodpkg",
+  "sha256": "e8a6a65930b1049673f548d7259c7372a04592fde6c1712f63281181d083baa3",
   "status": "active",
   "notes": "Single-player/offline trainer package."
 }
