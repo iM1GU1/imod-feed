@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "game": {
+    "id": "liesofp",
+    "name": "Lies of P",
+    "process_name": "LOP-Win64-Shipping.exe",
+    "module_name": "LOP-Win64-Shipping.exe"
+  },
+  "trainer": {
+    "version": "1.0.7",
+    "minimum_loader_version": "1.0.0",
+    "format": "declarative",
+    "notes": "Single-player/offline package. Only God mode is exposed for this trainer build.",
+    "source_table": "LOP-Win64-Shipping.CT.6.CT",
+    "changelog": [
+      "Restored CT-style God mode: pPino_C player pointer plus [pPino_C+848] stat-component filter.",
+      "Removed learned-pointer God mode fallback."
+    ],
+    "conversion_notes": [
+      "Remote package remains declarative. God mode execution is implemented locally in IMod.exe.",
+      "No remote scripts, DLLs or Cheat Engine Auto Assembler code are executed."
+    ]
+  },
+  "cheats": [
+    {
+      "id": "lop_god_mode",
+      "name": "God mode",
+      "description": "Keeps only the local player health stat high using the CT player stat-component filter.",
+      "category": "Player",
+      "default_hotkey": "F3",
+      "type": "local_code_cave_patch",
+      "status": "supported",
+      "enabled_by_default": false,
+      "notes": "CT-style implementation: player pointer hook + health stat hook; only applies when [pPino_C+848] matches the current stat component."
+    }
+  ]
+}
